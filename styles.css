@@ -9,6 +9,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Header styles */
@@ -66,6 +67,7 @@ section h2 {
 /* About section */
 .about .about-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -229,4 +231,26 @@ footer p {
     margin: 0;
     font-size: 1em;
     color: #aaaaaa;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .profile-photo {
+        margin: 0 auto 20px;
+    }
+
+    .experience .job, .skills ul li, .projects .project-item, .certifications ul li {
+        padding: 15px;
+        font-size: 1em;
+    }
 }
