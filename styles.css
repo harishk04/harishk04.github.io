@@ -78,6 +78,22 @@ section h2 {
     border: 2px solid #ff4081;
 }
 
+.about .btn-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.about .btn-download:hover {
+    background-color: #e91e63;
+}
+
 /* Experience section */
 .experience .job {
     background-color: #1f1f1f;
@@ -97,8 +113,13 @@ section h2 {
     color: #aaaaaa;
 }
 
-.experience .job p {
+.experience .job p, .experience .job ul {
     margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.experience .job ul {
+    padding-left: 20px;
 }
 
 /* Skills section */
