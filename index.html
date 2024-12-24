@@ -1,92 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Developer Portfolio - Your Name</title>
+    <title>Portfolio - Harish Kumar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>Your Name</h1>
-            <p>Salesforce Developer | Salesforce Certified | Passionate About CRM Solutions</p>
+            <h1>Harish Kumar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>
-                I am a certified Salesforce Developer with experience in building custom applications, automating processes,
-                and integrating Salesforce with external systems. I am passionate about delivering innovative and efficient
-                solutions that enhance the user experience and help organizations streamline their operations.
-            </p>
-            <p>
-                My expertise includes Apex, Visualforce, Lightning Web Components (LWC), SOQL, and integrating third-party
-                applications with Salesforce.
-            </p>
+            <div class="about-content">
+                <img src="harishProfile.jpg" alt="Harish's Photo" class="profile-photo">
+                <p>Hello! I am a Salesforce Developer with over 3 years of experience in designing, developing, and implementing Salesforce-based solutions. With a deep understanding of Salesforce's ecosystem, I specialize in customizing applications to meet business needs and delivering high-quality, scalable solutions. My expertise spans across Apex, Visualforce, Lightning Components, and integration of third-party applications. I am passionate about solving complex challenges and improving user experiences through automation, process optimization, and seamless integration.</p>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Software Engineer</h3>
+                <h4>HCLTech</h4>
+                <p>AUG 2021 - Sep 2024</p>
+                <ul>
+                    <li>Worked on developing, maintaining Salesforce applications and customizing Salesforce org as per the business needs.</li>
+                    <li>My responsibilities included configuring Salesforce, creating custom objects and fields,Developed and maintained automation workflows, reports, and dashboards to improve operational efficiency.</li>
+                    <li>I managed user permissions, data migration, and provided support and training to end-users</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Packaged App Development Analyst</h3>
+                <h4>Accenture</h4>
+                <p>Sept 2024 - Present</p>
+                <ul>
+                    <li>Developing Apex classes and triggers, designing Visualforce pages, and implementing Lightning Components.</li>
+                    <li>Designed and implemented custom automation solutions using Salesforce Process Builder and Flow, streamlining repetitive tasks and improving business efficiency by reducing manual interventions.</li>
+                    <li>Integration of third-party applications with Salesforce, leveraging REST APIs to enhance system interoperability and streamline business processes.</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
         <div class="container">
             <h2>Skills</h2>
             <ul>
-                <li>Apex Programming</li>
-                <li>Lightning Web Components (LWC)</li>
-                <li>SOQL & SOSL</li>
-                <li>Salesforce Integration (REST/SOAP APIs)</li>
-                <li>Visualforce Pages</li>
-                <li>Salesforce Lightning Design System (SLDS)</li>
-                <li>Data Modeling and Security</li>
-                <li>Automation (Process Builder, Flow, Workflow Rules)</li>
+                <li>Apex</li>
+                <li>Visualforce</li>
+                <li>Lightning Web Components</li>
+                <li>SOQL and SOSL</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>REST APIs</li>
             </ul>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="project1.png" alt="Project 1 Image" class="project-image">
+                <h3>Automated Expense Tracker</h3>
+                <p>Developed an automated expense tracker by integrating Salesforce and Gmail, using transaction emails from a bank to streamline financial tracking. Implemented OAuth 2.0 for secure authentication and data privacy, allowing seamless communication between the systems. This solution reduced manual data entry, improved real-time tracking of financial activities, and generated automated expense reports, leading to greater operational efficiency.</p>
+                <h3>Key Achievements:</h3>
+                <ul>
+                    <li><strong>Integrated Gmail and Salesforce</strong> for automated expense tracking, enabling real-time extraction of transaction details from bank emails.</li>
+                    <li><strong>Implemented OAuth 2.0 authentication</strong> to ensure secure and compliant connections between Gmail and Salesforce, safeguarding user data.</li>
+                    <li><strong>Developed a custom email parser</strong> to extract transaction data from bank emails and auto-populate expenses in Salesforce, reducing manual input.</li>
+                    <li><strong>Created real-time financial dashboards</strong> in Salesforce to visualize categorized expenses, improving budget tracking and reporting accuracy.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
             <ul>
-                <li>
-                    <strong>Custom Sales Dashboard</strong><br>
-                    <a href="https://github.com/yourusername/sales-dashboard" target="_blank">GitHub Repository</a><br>
-                    A custom Salesforce Lightning Web Component that visualizes sales data with interactive charts.
-                </li>
-                <li>
-                    <strong>Automated Lead Assignment</strong><br>
-                    <a href="https://github.com/yourusername/lead-assignment" target="_blank">GitHub Repository</a><br>
-                    An automated system to assign leads to sales representatives based on predefined criteria.
-                </li>
-                <li>
-                    <strong>Salesforce Integration with External System</strong><br>
-                    <a href="https://github.com/yourusername/sf-integration" target="_blank">GitHub Repository</a><br>
-                    A project demonstrating the integration of Salesforce with an external inventory management system using REST APIs.
-                </li>
+                <li>Salesforce Certified Administrator</li>
+                <li>Salesforce Certified Platform Developer I</li>
+                <li>Salesforce Certified JavaScript Developer I</li>
+                <li>Flosum Certified Professional</li>
             </ul>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>
-                You can reach me via email at: <a href="mailto:your-email@example.com">your-email@example.com</a>
-            </p>
-            <p>
-                Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn Profile</a>
-            </p>
+            <p>Feel free to reach out to me via the following platforms:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/harishk4" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="mailto:harishk04sm@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+            </ul>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Harish. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

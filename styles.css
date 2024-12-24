@@ -1,16 +1,9 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General body styling */
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .container {
@@ -18,57 +11,201 @@ body {
     margin: 0 auto;
 }
 
-/* Header styling */
+/* Header styles */
 header {
-    background: #0070d2;
-    color: #fff;
+    background-color: #1f1f1f;
     padding: 20px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 2.5em;
+    color: #ff4081;
 }
 
-header p {
-    font-size: 1.2em;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Section styling */
-section {
-    padding: 20px 0;
-    margin: 20px 0;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-/* Skills list */
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    padding: 8px 0;
-}
-
-/* Project links */
-a {
-    color: #0070d2;
+header nav ul li a {
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
-a:hover {
+header nav ul li a:hover {
+    color: #ff4081;
     text-decoration: underline;
 }
 
-/* Footer */
+/* Section styles */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4081;
+    display: inline-block;
+    color: #ff4081;
+}
+
+/* About section */
+.about .about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about .profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image is not distorted */
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+}
+
+/* Experience section */
+.experience .job {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.experience .job h3 {
+    margin-top: 0;
+    color: #ff4081;
+}
+
+.experience .job h4 {
+    margin: 0;
+    font-weight: normal;
+    color: #aaaaaa;
+}
+
+.experience .job p {
+    margin: 5px 0;
+}
+
+/* Skills section */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #1f1f1f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 1.1em;
+}
+
+/* Projects section */
+.projects .project-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.projects .project-item .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.projects .project-item h3 {
+    color: #ff4081;
+}
+
+.projects .project-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects .project-item ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.projects .project-item a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects .project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications section */
+.certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications ul li {
+    background-color: #1f1f1f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 1.1em;
+}
+
+/* Contact section */
+.contact p {
+    font-size: 1.2em;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    color: #ff4081;
+    text-decoration: underline;
+}
+
+.contact ul li a i {
+    margin-right: 10px;
+}
+
+/* Footer styles */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #1f1f1f;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #aaaaaa;
 }
